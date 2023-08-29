@@ -1,14 +1,28 @@
 import React from 'react';
 import './App.css';
-import Card from './componentes/Card';
-import imagenCarta1 from './img/1005_CocContigo_PastelPapa.jpg'; import imagenCarta2 from './img/Milanesa-con-papas-fritas.jpg';
+import Cartas from './componentes/Cartas';
+
+const iconUrl = 'URL_DE_TU_ICONO'; // Reemplaza con la URL correcta
 
 function App() {
   return (
-    <header className="App-header">
-    <Card imagenSrc={imagenCarta1} nombre="comida 1" />
-    <Card imagenSrc={imagenCarta2} nombre="comida 2" />
-  </header>
+    <div className="App">
+      <nav className="navbar">
+        <div className="logo">
+          <img src={iconUrl} alt='' />
+        </div>
+        <ul className="nav-list">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <Cartas />
+      <footer className="footer">
+        <div className="footer-content">
+          <p>© 2023 Mi Empresa. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
   );
 }
 
