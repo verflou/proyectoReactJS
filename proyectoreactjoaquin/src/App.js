@@ -1,21 +1,14 @@
 import React from 'react';
 import './App.css';
-import Cartas from './componentes/Cartas';
+import Cartas from './componentes/Card';
+import Navbar from './componentes/Navbar';
 
-const iconUrl = 'URL_DE_TU_ICONO'; // Reemplaza con la URL correcta
+
 
 function App() {
   return (
     <div className="App">
-      <nav className="navbar">
-        <div className="logo">
-          <img src={iconUrl} alt='' />
-        </div>
-        <ul className="nav-list">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
+      <Navbar/>
       <Cartas />
       <footer className="footer">
         <div className="footer-content">
