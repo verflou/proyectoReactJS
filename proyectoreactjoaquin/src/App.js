@@ -19,7 +19,8 @@ function App() {
       <Cartas />
       <footer className="footer">
         <div className="footer-content">
-          <p>© 2023 Mi Empresa. Todos los derechos reservados.</p>
+                <p>© 2023</p>
+          <p>  Pagina creada por Joaquin Suarez</p>
         </div>
       </footer>
     </div>
